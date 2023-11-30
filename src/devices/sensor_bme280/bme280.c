@@ -320,7 +320,7 @@ void bme280_init_struct(
     const system_callbacks_t *callbacks
 ) {
     bme280->i2c = i2c;
-    bme280->i2c_address = 0x76;
+    bme280->i2c_address = i2c_address;
 
     bme280->callbacks = callbacks;
 
